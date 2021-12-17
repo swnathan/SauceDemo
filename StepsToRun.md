@@ -11,4 +11,4 @@ yarn clean
 yarn test
 
 ## Verify Reports in Directory
-Reports will be in reports Directory
+Reports will be in /reports Directory

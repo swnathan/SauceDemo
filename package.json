@@ -14,7 +14,7 @@
     "generate-report": "npx marge mochawesome.json",
     "post": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts &&  npm run post",
-    "scripts": "npx cypress run --headless --spec \"cypress/integration/testcases/SauceDemo_Spec.js\"",
+    "scripts": "npx cypress run --headless  --browser chrome --spec \"cypress/integration/testcases/SauceDemo_Spec.js\"",
     "deleteOldVersion": "npx cypress cache prune",
     "cy:verify": "cypress verify"
   },

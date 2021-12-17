@@ -8,8 +8,48 @@ class productspage {
        return cy.get('button[data-test="add-to-cart-sauce-labs-backpack"]');
    }
 
-   getSauceLabsRemoveBagPack() {
+   getSauceLabsBagBikeLight() {
+    return cy.get('button[data-test="add-to-cart-sauce-labs-bike-light"]');
+}
+
+getSauceLabsBoltTshirt() {
+    return cy.get('button[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]');
+}
+
+getSauceLabsOnesie() {
+    return cy.get('button[data-test="add-to-cart-sauce-labs-onesie"]');
+}
+
+getSauceLabsFleeceJacket() {
+    return cy.get('button[data-test="add-to-cart-sauce-labs-fleece-jacket"]');
+}
+
+getSauceLabsAllThingsRedTshirt() {
+    return cy.get('button[data-test="add-to-cart-test.allthethings()-t-shirt-(red)"]');
+}
+
+getSauceLabsRemoveBagPack() {
     return cy.get('button[data-test="remove-sauce-labs-backpack"]');
+}
+
+   getSauceLabsRemoveBagBikeLight() {
+    return cy.get('button[data-test="remove-sauce-labs-bike-light"]');
+}
+
+getSauceLabsRemoveBolttshirt() {
+    return cy.get('button[data-test="remove-sauce-labs-bolt-t-shirt"]');
+}
+
+getSauceLabsRemoveOnesie() {
+    return cy.get('button[data-test="remove-sauce-labs-onesie"]');
+}
+
+getSauceLabsRemoveFleeceJacket() {
+    return cy.get('button[data-test="remove-sauce-labs-fleece-jacket"]');
+}
+
+getSauceLabsRemoveAllThinsRedTshirt() {
+    return cy.get('button[data-test="remove-test.allthethings()-t-shirt-(red)"]');
 }
 
 getShoppingCart() {
