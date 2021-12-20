@@ -56,6 +56,14 @@ getShoppingCart() {
     return cy.get('span[class="shopping_cart_badge"]');
 }
 
+getProductName() {
+   return cy.get('.inventory_item_name');
+}
+
+getProductPrice() {
+    cy.get('.inventory_item_price');
+}
+
     
     
 }

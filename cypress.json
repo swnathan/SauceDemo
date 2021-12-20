@@ -4,7 +4,7 @@
     "screenshotOnRunFailure":true,
     "pageLoadTimeout":60000,
     "env": {
-      "landingpageurl": "https://www.saucedemo.com/"
+      "baseurl": "https://www.saucedemo.com/"
     },
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
@@ -12,7 +12,7 @@
             "reportDir": "cypress/reports",
             "quite": true,
             "overwrite": false,
-            "html": false,
+            "html": true,
             "json": true
         },
         "screenshotsFolder":"/cypress/screenshots/*"

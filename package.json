@@ -14,7 +14,7 @@
     "generate-report": "npx marge mochawesome.json",
     "post": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts &&  npm run post",
-    "scripts": "npx cypress run --headless  --browser chrome --spec \"cypress/integration/testcases/SauceDemo_Spec.js\"",
+    "scripts": "npx cypress run --headless  --browser chrome --spec \"cypress/integration/testcases/SauceDemo*_Spec.js\"",
     "deleteOldVersion": "npx cypress cache prune",
     "cy:verify": "cypress verify"
   },
@@ -27,11 +27,13 @@
   "license": "ISC",
   "dependencies": {
     "cypress-multi-reporters": "^1.4.0",
+    "cypress-parallel": "^0.7.0",
+    "har-validator": "5.1.5",
+    "lambdatest-cypress-cli": "^2.1.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0",
-    "nyc": "^15.1.0",
-    "har-validator": "5.1.5"
+    "nyc": "^15.1.0"
   }
 }

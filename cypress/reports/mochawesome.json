@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-20T18:20:06.921Z",
+    "end": "2021-12-20T18:21:18.019Z",
+    "duration": 71098,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ce599df-edc6-4273-b0c6-a8da73a75f2c",
+      "title": "",
+      "fullFile": "cypress\\integration\\testcases\\SauceDemoAddProductsCart_Spec.js",
+      "file": "cypress\\integration\\testcases\\SauceDemoAddProductsCart_Spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+          "title": "Verifying Sauce Demo Add/Remove Products to Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Add/Remove Product From Cart - Sauce Labs Backpack",
+              "fullTitle": "Verifying Sauce Demo Add/Remove Products to Cart Verify Add/Remove Product From Cart - Sauce Labs Backpack",
+              "timedOut": null,
+              "duration": 8374,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var page = new _productspage[\"default\"]();\npage.getSauceLabsBagPack().should('be.visible');\npage.getSauceLabsBagPack().click();\npage.getShoppingCart().click();\ncy.get('.inventory_item_name').should('contain', 'Sauce Labs Backpack');\ncy.get('.inventory_item_price').should('contain', '$29.99');\npage.getSauceLabsRemoveBagPack().click();\ncy.get('.inventory_item_name').should('not.exist');",
+              "err": {},
+              "uuid": "7edd6faa-ff08-42fc-b05b-f01491171a33",
+              "parentUUID": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add/Remove Product From Cart - Sauce Labs OneSie",
+              "fullTitle": "Verifying Sauce Demo Add/Remove Products to Cart Verify Add/Remove Product From Cart - Sauce Labs OneSie",
+              "timedOut": null,
+              "duration": 7661,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var page = new _productspage[\"default\"]();\npage.getSauceLabsOnesie().click();\npage.getShoppingCart().click();\ncy.get('.inventory_item_name').should('contain', 'Sauce Labs Onesie');\ncy.get('.inventory_item_price').should('contain', '$7.99');\npage.getSauceLabsRemoveOnesie().click();\ncy.get('.inventory_item_name').should('not.exist');",
+              "err": {},
+              "uuid": "42cc0a47-aa4a-4291-aae6-19de23a801f3",
+              "parentUUID": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add/Remove Product From Cart - Sauce Labs Fleece Jacket",
+              "fullTitle": "Verifying Sauce Demo Add/Remove Products to Cart Verify Add/Remove Product From Cart - Sauce Labs Fleece Jacket",
+              "timedOut": null,
+              "duration": 6858,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var page = new _productspage[\"default\"]();\npage.getSauceLabsFleeceJacket().click();\npage.getShoppingCart().click();\ncy.get('.inventory_item_name').should('contain', 'Sauce Labs Fleece Jacket');\ncy.get('.inventory_item_price').should('contain', '$49.99');\npage.getSauceLabsRemoveFleeceJacket().click();\ncy.get('.inventory_item_name').should('not.exist');",
+              "err": {},
+              "uuid": "1cc53eb7-e8ed-4669-a199-463ddd472419",
+              "parentUUID": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add/Remove Product From Cart - Sauce Labs Bolt Tshirt",
+              "fullTitle": "Verifying Sauce Demo Add/Remove Products to Cart Verify Add/Remove Product From Cart - Sauce Labs Bolt Tshirt",
+              "timedOut": null,
+              "duration": 6861,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var page = new _productspage[\"default\"]();\npage.getSauceLabsBoltTshirt().click();\npage.getShoppingCart().click();\ncy.get('.inventory_item_name').should('contain', 'Sauce Labs Bolt T-Shirt');\ncy.get('.inventory_item_price').should('contain', '$15.99');\npage.getSauceLabsRemoveBolttshirt().click();\ncy.get('.inventory_item_name').should('not.exist');",
+              "err": {},
+              "uuid": "bf1011cc-db96-4430-a1e1-23632f1415cb",
+              "parentUUID": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add/Remove Product From Cart - Sauce Labs All Things Red Tshirt",
+              "fullTitle": "Verifying Sauce Demo Add/Remove Products to Cart Verify Add/Remove Product From Cart - Sauce Labs All Things Red Tshirt",
+              "timedOut": null,
+              "duration": 6982,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var page = new _productspage[\"default\"]();\npage.getSauceLabsAllThingsRedTshirt().click();\npage.getShoppingCart().click();\ncy.get('.inventory_item_name').should('contain', 'Test.allTheThings() T-Shirt (Red)');\ncy.get('.inventory_item_price').should('contain', '$15.99');\npage.getSauceLabsRemoveAllThinsRedTshirt().click();\ncy.get('.inventory_item_name').should('not.exist');",
+              "err": {},
+              "uuid": "b700d6fe-3e3b-42f1-b0bc-a448c6734e2a",
+              "parentUUID": "bb6d6cda-5618-4989-b3bb-8869618a0d5a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7edd6faa-ff08-42fc-b05b-f01491171a33",
+            "42cc0a47-aa4a-4291-aae6-19de23a801f3",
+            "1cc53eb7-e8ed-4669-a199-463ddd472419",
+            "bf1011cc-db96-4430-a1e1-23632f1415cb",
+            "b700d6fe-3e3b-42f1-b0bc-a448c6734e2a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36736,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

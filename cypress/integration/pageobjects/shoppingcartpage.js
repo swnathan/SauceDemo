@@ -23,6 +23,14 @@ class shoppingcartpage {
     getFinish() {
         return cy.get('button[name="finish"]');
     }
+
+    getPaymentInformation() {
+        return cy.get('button[name="finish"]');
+    }
+
+    getShippingInformation() {
+        return cy.get('button[name="finish"]');
+    }
     
     
 }

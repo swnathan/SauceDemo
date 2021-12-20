@@ -16,6 +16,10 @@ class loginpage {
         return cy.get('input[type="submit"]');
     }
 
+    getErrorMessage() {
+        return  cy.get('[data-test=error]');
+    }
+
     
     
 }
