@@ -61,7 +61,7 @@ getProductName() {
 }
 
 getProductPrice() {
-    cy.get('.inventory_item_price');
+    return cy.get('.inventory_item_price');
 }
 
     

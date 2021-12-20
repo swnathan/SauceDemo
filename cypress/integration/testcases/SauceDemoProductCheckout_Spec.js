@@ -23,7 +23,7 @@ describe('Verifying Sauce Demo Product Checkout Tests', function () {
     page.getSauceLabsBagBikeLight().click()
     page.getSauceLabsRemoveBagBikeLight().should('be.visible')
     page.getShoppingCart().click()
-    cy.get('.inventory_item_price').should('contain', '$9.99')
+    page.getProductPrice().should('contain', '$9.99')
     shoppingcart.getCheckout().click()
     shoppingcart.getFirstName().type('sam')
     shoppingcart.getLastName().type('test')
