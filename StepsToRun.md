@@ -27,4 +27,28 @@ browser  can be changed to different browsers (Example: firefox,edge)
 
 ## CI/CD Integration
 I have created Jenkins pipeline Scripts to Execute the Tests
-we just need to have Cypress Docker Image Installed in The Machine so we can update the name in agent label 
+we just need to have Cypress Docker Image Installed in The Machine so we can update the name in agent label
+
+## Parallel Execution in Cloud
+I have executed the tests parallely in Cloud using Lambdatest
+
+we need to install the LambdaTest-Cypress CLI
+
+install the LambdaTest-Cypress CLI: npm install -g lambdatest-cypress-cli
+
+LambdaTest Cypress configuration file: lambdatest-cypress init  (creates lambdatest-config.json)
+
+ In this configuration file we need to set up your LambdaTest credentials that will help you run your test on the Online Grid (inside )
+"auth": {
+    "username": "LT_USERNAME",
+    "access_key": "LT_ACCESS_KEY"
+    },
+
+ browsers & OS configuration: we need to add browser and OS configuration under browsers 
+
+ run_settings: cypress_version, number of parallel sessions can be specified under run_settings
+
+ Execute Tests : lambdatest-cypress run
+
+I have executed the tests in different Environments
+LambdaTest Dashboard - https://automation.lambdatest.com/logs/?testID=DAL73-GGOJ8-L401X-QFCHA

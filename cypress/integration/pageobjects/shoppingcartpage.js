@@ -31,6 +31,18 @@ class shoppingcartpage {
     getShippingInformation() {
         return cy.get('button[name="finish"]');
     }
+
+    getSummaryTotal() {
+        return cy.get('.summary_total_label');
+    }
+
+    getPaymentInformation() {
+        return  cy.get('.summary_info > :nth-child(2)');
+    }
+
+    getShippingInformation() {
+        return cy.get('.summary_info > :nth-child(4)');
+    }
     
     
 }
